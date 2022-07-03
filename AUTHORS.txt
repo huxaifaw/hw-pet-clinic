@@ -1,0 +1,19 @@
+- Create Multi-Module Spring Boot Maven Project. Closes #1
+Break project in small modules. Update pom.xml files accordingly for the relevant modules.
+Add dependency of one module on another if needed. e.g.
+	(pet-clinic-web) pom.xml
+		<dependency>
+            <artifactId>pet-clinic-data</artifactId>
+            <groupId>zaifi.springframework</groupId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+		
+Create jar file using Maven package. 
+
+	<properties>
+		...
+		<spring-boot.repackage.skip>true</spring-boot.repackage.skip>
+	</properties>
+   -- Used for building lean jar file which doesn't contain dependencies.
+   
+   
