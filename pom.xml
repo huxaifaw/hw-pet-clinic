@@ -41,6 +41,6 @@
     </build>
     <scm>
         <developerConnection>scm:git:https://github.com/huxaifaw/hw-pet-clinic.git</developerConnection>
-      <tag>scm:git:https://github.com/huxaifaw/hw-pet-clinic.git</tag>
+      <tag>hw-pet-clinic-2.6.7</tag>
   </scm>
 </project>
