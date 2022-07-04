@@ -14,7 +14,7 @@
     </parent>
     <groupId>zaifi.springframework</groupId>
     <artifactId>hw-pet-clinic</artifactId>
-    <version>2.6.9</version>
+    <version>2.6.10-SNAPSHOT</version>
     <name>hw-pet-clinic</name>
     <description>hw-pet-clinic</description>
     <properties>
@@ -42,6 +42,6 @@
     </build>
     <scm>
         <developerConnection>scm:git:https://github.com/huxaifaw/hw-pet-clinic.git</developerConnection>
-      <tag>hw-pet-clinic-2.6.9</tag>
+      <tag>scm:git:https://github.com/huxaifaw/hw-pet-clinic.git</tag>
   </scm>
 </project>
