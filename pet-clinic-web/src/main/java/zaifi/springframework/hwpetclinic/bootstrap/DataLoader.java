@@ -6,17 +6,15 @@ import zaifi.springframework.hwpetclinic.model.Owner;
 import zaifi.springframework.hwpetclinic.model.Vet;
 import zaifi.springframework.hwpetclinic.services.OwnerService;
 import zaifi.springframework.hwpetclinic.services.VetService;
-import zaifi.springframework.hwpetclinic.services.map.OwnerServiceMap;
-import zaifi.springframework.hwpetclinic.services.map.VetServiceMap;
 
 @Component
 public class DataLoader implements CommandLineRunner {
     private final OwnerService ownerService;
     private final VetService vetService;
 
-    public DataLoader() {
-        this.ownerService = new OwnerServiceMap();
-        this.vetService = new VetServiceMap();
+    public DataLoader(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
 
     @Override
