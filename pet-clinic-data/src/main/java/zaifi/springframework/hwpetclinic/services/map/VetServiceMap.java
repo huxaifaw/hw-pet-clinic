@@ -1,11 +1,11 @@
 package zaifi.springframework.hwpetclinic.services.map;
 
 import zaifi.springframework.hwpetclinic.model.Vet;
-import zaifi.springframework.hwpetclinic.services.CrudService;
+import zaifi.springframework.hwpetclinic.services.VetService;
 
 import java.util.Set;
 
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
     @Override
     public Set<Vet> findAll() {
         return super.findAll();
@@ -18,8 +18,7 @@ public class VetServiceMap extends AbstractMapService<Vet, Long> implements Crud
 
     @Override
     public Vet save(Vet object) {
-        super.save(object.getId(), object);
-        return object;
+        return super.save(object.getId(), object);
     }
 
     @Override
