@@ -7,7 +7,7 @@ import zaifi.springframework.hwpetclinic.services.PetTypeService;
 import java.util.Set;
 
 @Service
-public class PetTypeServiceMap extends AbstractMapService<PetType, Long> implements PetTypeService {
+public class PetTypeMapService extends AbstractMapService<PetType, Long> implements PetTypeService {
     @Override
     public void delete(PetType t) {
         super.delete(t);
