@@ -1,5 +1,6 @@
 package zaifi.springframework.hwpetclinic.services.map;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import zaifi.springframework.hwpetclinic.model.PetType;
 import zaifi.springframework.hwpetclinic.services.PetTypeService;
@@ -7,6 +8,7 @@ import zaifi.springframework.hwpetclinic.services.PetTypeService;
 import java.util.Set;
 
 @Service
+@Profile({"default", "map"})
 public class PetTypeMapService extends AbstractMapService<PetType, Long> implements PetTypeService {
     @Override
     public void delete(PetType t) {

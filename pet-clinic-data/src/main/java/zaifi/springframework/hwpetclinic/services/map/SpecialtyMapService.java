@@ -1,5 +1,6 @@
 package zaifi.springframework.hwpetclinic.services.map;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import zaifi.springframework.hwpetclinic.model.Specialty;
 import zaifi.springframework.hwpetclinic.services.SpecialtyService;
@@ -7,6 +8,7 @@ import zaifi.springframework.hwpetclinic.services.SpecialtyService;
 import java.util.Set;
 
 @Service
+@Profile({"default", "map"})
 public class SpecialtyMapService extends AbstractMapService<Specialty, Long> implements SpecialtyService {
     @Override
     public void delete(Specialty t) {

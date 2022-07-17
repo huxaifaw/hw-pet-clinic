@@ -1,5 +1,6 @@
 package zaifi.springframework.hwpetclinic.services.map;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import zaifi.springframework.hwpetclinic.model.Owner;
 import zaifi.springframework.hwpetclinic.model.Pet;
@@ -10,6 +11,7 @@ import zaifi.springframework.hwpetclinic.services.PetTypeService;
 import java.util.Set;
 
 @Service
+@Profile({"default", "map"})
 public class OwnerMapService extends AbstractMapService<Owner, Long> implements OwnerService {
     private final PetService petService;
     private final PetTypeService petTypeService;
