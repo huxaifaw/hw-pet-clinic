@@ -15,5 +15,9 @@ Create jar file using Maven package.
 		<spring-boot.repackage.skip>true</spring-boot.repackage.skip>
 	</properties>
    -- Used for building lean jar file which doesn't contain dependencies.
+
+   @MappedSuperclass
+   Tells JPA that the annotated class is the base class. Other classes will be inheriting this class, and we don't want this class
+   to be mapped in the database.
    
    
