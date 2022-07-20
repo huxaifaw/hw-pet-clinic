@@ -19,5 +19,14 @@ Create jar file using Maven package.
    @MappedSuperclass
    Tells JPA that the annotated class is the base class. Other classes will be inheriting this class, and we don't want this class
    to be mapped in the database.
+
+   Amending Git Commit Messages
+   git rebase -i HEAD~n
+   -i is for interactive and n is the number of commits you want to go back
+
+   e.g.
+   git rebase -i HEAD~4
+
+   'reword' to edit commit message
    
    
