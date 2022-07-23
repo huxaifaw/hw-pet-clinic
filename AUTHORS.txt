@@ -28,5 +28,7 @@ Create jar file using Maven package.
    git rebase -i HEAD~4
 
    'reword' to edit commit message
+
+   MockMvc is used to test MVC Controllers
    
    
